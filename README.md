@@ -1,99 +1,104 @@
-View Web Page - https://luciferofx.github.io/Oerion/
+# 🌀 Oerion Language
 
-Oerion Programming Language
+**Oerion** is a simple, elegant, Python-inspired interpreted programming language built by [@Raja](https://github.com/raja). It's designed for beginners and creative minds who want to quickly build logic, do AI magic, and even create their own language based on it.
 
-Oerion is a simple, beginner-friendly programming language inspired by Python. It is designed to help students and developers quickly create projects, including face detection, productivity tools, and more. Oerion aims to make coding accessible and fun while being easy to learn and use.
 
-Features
+---
 
-Python-like syntax for easy adoption
+## 🌍 Documentation
 
-Supports variables, conditional statements, loops, and arithmetic operations
+🔗 [Play Now](https://luciferofx.github.io/Oerion/)  
+> Hosted with ❤️ on GitHub Pages
 
-Simple and minimalistic design
+---
 
-Ideal for students and beginners
+---
 
-Can be used for building various projects like face recognition and productivity tools
+## 🚀 Features
 
-Installation
+- ✅ Python-like syntax
+- 🔁 Support for `while` and `for` loops
+- 🧠 AI-powered commands (e.g. `ai_generate`)
+- 📄 Custom `.oer` file extension
+- ⚙️ Cross-platform CLI (`oerion`)
+- 🌐 Coming Soon: Online Web Playground
 
-To install Oerion globally using NPM, run the following command:
+---
 
-npm install -g oerion
+## 📦 Installation
 
-Running an Oerion Program
+Install globally from NPM:
 
-To execute an .oer file, use:
+```bash
+npm install -g oerion-lang
+```
 
-oerion <filename>.oer
+## 🙏 Support the Project
 
-Example:
+Love LuciChain? Help me keep it alive & growing! Your support means everything. ❤️
 
-oerion test.oer
+> 🟢 **UPI**: `gamobhai2@ybl`  
+> 🧾 **Binance UID**: `783008968`
 
-Syntax Guide
+### 💰 Crypto Donations
 
-1. Printing Output
+| Coin | Address |
+|------|---------|
+| **USDT (TRC-20)** | `TXKPBgR9d5xq5KpAyd2maPVQuEEDZ9DgiQ` |
+| **BTC** | `1JeBUw4bjL9tuKrHwKKk4dx3mPy1jxys8j` |
+| **LTC** | `LPUR2CE5SfArfYRJWkdtqhGz3t17Rijz2d` |
 
-print "Hello, Oerion!"
+---
 
-Output:
 
-Hello, Oerion!
+---
 
-2. Variables
+## ⚙️ How to Run Locally
 
-name = "Raja"
-print name
+1. 📥 Clone the repo:
+```bash
+git clone https://github.com/luciferofx/Oerion.git
+cd Oerion
+```
+---
 
-Output:
+##  ▶️ How to Use
+Write your Oerion code in a .oer file:
 
-Raja
+🔍 example.oer
+```
+let x = 0
+while x < 3:
+    print x
+    let x = x + 1
 
-3. Arithmetic Operations
-
-a = 10
-b = 5
-sum = a + b
-print sum
-
-Output:
-
-15
-
-4. Conditional Statements
-
-x = 10
-if x > 5:
-    print "X is greater than 5"
-else:
-    print "X is less than or equal to 5"
-
-Output:
-
-X is greater than 5
-
-5. Loops
-
-i = 1
-while i <= 5:
+for i in range(5):
     print i
-    i = i + 1
 
-Output:
+ai_generate "Write a short quote about programming"
 
-1
-2
-3
-4
-5
+```
+```
+ai_generate "Write a short quote about programming"
+```
 
-Contributing
+---
 
-If you want to contribute to Oerion, feel free to fork the repository, make changes, and submit a pull request.
+#Then run it using:
 
-License
+```
+oerion example.oer
+```
 
-Oerion is open-source and released under the MIT License.
+---
+## 💡 Built-in Syntax
+
+
+| Feature | Syntax |
+|------|---------|
+| **Variables** | `let name = "Raja"` |
+| **Print** | `print "Hello"` |
+| **While Loop** | `while x < 10:` |
+| **For Loop** | `for i in range(5):` |
+| **AI Generator** | `ai_generate "Say something"` |
 
