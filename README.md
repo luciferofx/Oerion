@@ -1,6 +1,6 @@
 # 🌀 Oerion Language
 
-**Oerion** is a simple, elegant, Python-inspired interpreted programming language built by [@Raja](https://github.com/raja). It's designed for beginners and creative minds who want to quickly build logic, do AI magic, and even create their own language based on it.
+**Oerion** is a simple, elegant, Python-inspired interpreted programming language built by [@Raja](https://github.com/luciferofx). It's designed for beginners and creative minds who want to quickly build logic, do AI magic, and even create their own language based on it.
 
 
 ---
