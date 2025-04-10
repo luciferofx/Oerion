@@ -1,1 +1,265 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oerion Language Docs</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Fira Code', monospace;
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      color: #f1f1f1;
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      color: #00ffe1;
+      text-align: center;
+      font-size: 2.5rem;
+      animation: floatIn 1s ease-out forwards;
+    }
+
+    h2 {
+      color: #00ffe1;
+      border-bottom: 1px solid #00ffe1;
+      padding-bottom: 0.3rem;
+      margin-top: 2.5rem;
+      animation: slideIn 0.5s ease-out;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+      animation: fadeIn 1s ease-out;
+    }
+
+    .command {
+      background: #1c1f26;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid #00ffe1;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .command:hover {
+      transform: scale(1.02);
+    }
+
+    code {
+      background: #2d313a;
+      padding: 0.5rem 0.7rem;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 0.2rem 0;
+      color: #00ffc3;
+    }
+
+    p.desc {
+      margin-top: 0.3rem;
+      color: #bbb;
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+      animation: fadeIn 2s ease-out;
+    }
+
+    a {
+      color: #00ffe1;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .note {
+      font-style: italic;
+      color: #8be9fd;
+      margin-bottom: 2rem;
+      text-align: center;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    @keyframes floatIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>🌟 Oerion Language - Developer Docs</h1>
+  <p class="note">This language is <strong>open-source</strong> and created with ❤️ by <strong>Raja Sharma</strong>. Feel free to use, modify, and contribute.</p>
+  <section class="section">
+    <h2>📚 Example Code Snippets</h2>
+
+    <div class="command">
+      <code>let nums = [1, 2, 3]
+nums.append(4)
+nums.remove(2)
+print nums</code>
+      <p class="desc">Creates a list, appends 4, removes 2, and prints the final list.</p>
+    </div>
+
+    <div class="command">
+      <code>let name = "Raja"
+print "Hello", name</code>
+      <p class="desc">Declares a string and prints a greeting with it.</p>
+    </div>
+
+    <div class="command">
+      <code>print type nums</code>
+      <p class="desc">Prints the data type of the variable <code>nums</code>.</p>
+    </div>
+
+    <div class="command">
+      <code>for i in range(5):
+    if i == 3:
+        break
+    print i</code>
+      <p class="desc">Loops from 0 to 4, prints numbers until 3, then breaks.</p>
+    </div>
+
+    <div class="command">
+      <code>try:
+    let x = 5 / 0
+except:
+    print "Caught division error!"</code>
+      <p class="desc">Demonstrates basic error handling for division by zero.</p>
+    </div>
+
+    <div class="command">
+      <code>let x = "123"
+to_int(x)</code>
+      <p class="desc">Converts a string to an integer.</p>
+    </div>
+
+    <div class="command">
+      <code>import "utils.oer"</code>
+      <p class="desc">Imports utility functions from an external Oerion script file.</p>
+    </div>
+  </section>
+  <section class="section">
+    <h2>📤 Output</h2>
+    <div class="command">
+      <code>print "Hello"</code>
+      <p class="desc">Displays text in the console.</p>
+    </div>
+    <div class="command">
+      <code>print myVar</code>
+      <p class="desc">Prints the value of <code>myVar</code>.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>🧠 Variables</h2>
+    <div class="command">
+      <code>let x = 5</code>
+      <p class="desc">Creates a variable <code>x</code> with value <code>5</code>.</p>
+    </div>
+    <div class="command">
+      <code>let name = "Raja"</code>
+      <p class="desc">Stores the string <code>"Raja"</code> in <code>name</code>.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>🔎 Conditions</h2>
+    <div class="command">
+      <code>if x &gt; 3:</code><br>
+      <code>    print "x is greater than 3"</code>
+      <p class="desc">Checks a condition. Runs the block if <code>true</code>.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>🔁 Loops</h2>
+    <div class="command">
+      <code>while x &lt; 5:</code><br>
+      <code>    print x</code><br>
+      <code>    let x = x + 1</code>
+      <p class="desc">Repeats the block while condition is true.</p>
+    </div>
+
+    <div class="command">
+      <code>for i in range(3):</code><br>
+      <code>    print i</code>
+      <p class="desc">Repeats block 3 times, with <code>i</code> from 0 to 2.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>🧾 Input</h2>
+    <div class="command">
+      <code>let name = input("Enter your name: ")</code>
+      <p class="desc">Prompts the user and stores input in <code>name</code>.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>🛠️ Built-in Tools</h2>
+    <div class="command">
+      <code>type myVar</code>
+      <p class="desc">Returns the type of <code>myVar</code> (like int, str).</p>
+    </div>
+    <div class="command">
+      <code>to_int("42")</code><br>
+      <code>to_float("3.14")</code>
+      <p class="desc">Converts strings into numbers.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>📦 Examples</h2>
+    <div class="command">
+      <code>let a = 10</code><br>
+      <code>let b = 20</code><br>
+      <code>let sum = a + b</code><br>
+      <code>print sum</code>
+      <p class="desc">Adds two numbers and prints the result.</p>
+    </div>
+
+    <div class="command">
+      <code>let i = 0</code><br>
+      <code>while i &lt; 3:</code><br>
+      <code>    print i</code><br>
+      <code>    let i = i + 1</code>
+      <p class="desc">Prints 0 to 2 using a while loop.</p>
+    </div>
+
+    <div class="command">
+      <code>for x in range(5):</code><br>
+      <code>    print x</code>
+      <p class="desc">Prints numbers 0 through 4 using a for loop.</p>
+    </div>
+  </section>
+
+  <footer>
+    📖 <a href="https://github.com/luciferofx/Oerion" target="_blank">Contribute on GitHub</a> • Made by Raja Sharma • Build something awesome with Oerion 💻
+  </footer>
+</body>
+</html>
